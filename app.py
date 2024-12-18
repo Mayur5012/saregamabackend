@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import boto3
 from pymongo import MongoClient
 from serverless_wsgi import handle_request
+from urllib.parse import quote
 
 # Load environment variables
 load_dotenv()
