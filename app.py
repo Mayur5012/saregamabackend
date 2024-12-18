@@ -12,7 +12,8 @@ load_dotenv()
 
 # Initialize the Flask app
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://your-frontend-render-url.app"}})
+CORS(app, resources={r"/*": {"origins": "*"}})
+
 
 # Load environment variables from .env
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
